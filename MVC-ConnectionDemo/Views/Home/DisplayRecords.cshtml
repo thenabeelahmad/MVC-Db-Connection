@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>DisplayRecords</title>
+    
+</head>
+<body>
+    <div>
+        <h3 class="text-center">Display Records</h3>
+        <hr /> 
+
+
+        <div class="container text-light">
+             <div class="table table-secondary table-hover text-light" id="position">
+            @{
+                @Html.Raw(ViewBag.table);   
+             }
+        </div>
+        </div>
+       
+        
+    </div>
+</body>
+</html>
